@@ -1,4 +1,4 @@
-# revision 27037
+# revision 27593
 # category Package
 # catalog-ctan /macros/luatex/generic/luatexja
 # catalog-date 2012-06-23 09:21:42 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-luatexja
 Version:	20120623
-Release:	2
+Release:	3
 Summary:	Typesest Japanese with lua(la)tex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja
