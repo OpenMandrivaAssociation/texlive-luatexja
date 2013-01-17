@@ -1,4 +1,4 @@
 sources:
-  "luatexja.doc.tar.xz:"	9dd95ad352473bd8c9183b5202dfe9a0b0876161
-  "luatexja.source.tar.xz:"	7540a48d1abe844abd7054604917f564dd694d4e
-  "luatexja.tar.xz:"	d57f163c454e26d43dd9d42df67393114d560557
+  luatexja.doc.tar.xz: 9dd95ad352473bd8c9183b5202dfe9a0b0876161
+  luatexja.source.tar.xz: 7540a48d1abe844abd7054604917f564dd694d4e
+  luatexja.tar.xz: d57f163c454e26d43dd9d42df67393114d560557
