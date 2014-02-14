@@ -1,13 +1,12 @@
-# revision 31609
+# revision 32895
 # category Package
 # catalog-ctan /macros/luatex/generic/luatexja
-# catalog-date 2013-09-09 16:22:23 +0200
+# catalog-date 2014-02-04 12:53:17 +0100
 # catalog-license other-free
-# catalog-version 20130909.0
-
+# catalog-version 20140204.0
 Name:		texlive-luatexja
-Version:	20130909
-Release:	5
+Version:	20140204
+Release:	1
 Summary:	Typeset Japanese with lua(la)tex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja
@@ -120,6 +119,7 @@ used with the package.
 %doc %{_texmfdistdir}/source/luatex/luatexja/ltjsclasses.ins
 %doc %{_texmfdistdir}/source/luatex/luatexja/tool/blocks2defcharrange.rb
 %doc %{_texmfdistdir}/source/luatex/luatexja/tool/chars2defcharrange.rb
+%doc %{_texmfdistdir}/source/luatex/luatexja/tool/ivslist.tex
 %doc %{_texmfdistdir}/source/luatex/luatexja/tool/jfm-readable.rb
 %doc %{_texmfdistdir}/source/luatex/luatexja/tool/jisx0208table.tex
 %doc %{_texmfdistdir}/source/luatex/luatexja/tool/kyoikukanji.txt
