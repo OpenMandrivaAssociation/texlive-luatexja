@@ -6,7 +6,7 @@
 # catalog-version 20140204.0
 Name:		texlive-luatexja
 Version:	20140204
-Release:	3
+Release:	4
 Summary:	Typeset Japanese with lua(la)tex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja
