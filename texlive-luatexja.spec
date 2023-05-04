@@ -1,6 +1,6 @@
 Name:		texlive-luatexja
-Version:	65790
-Release:	2
+Version:	67003
+Release:	1
 Summary:	Typeset Japanese with lua(la)tex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja
