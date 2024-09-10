@@ -1,5 +1,5 @@
 Name:		texlive-luatexja
-Version:	71802
+Version:	72242
 Release:	1
 Summary:	Typeset Japanese with lua(la)tex
 Group:		Publishing
