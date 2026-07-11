@@ -1,45 +1,24 @@
-Name:		texlive-luatexja
-Version:	76924
-Release:	1
-Summary:	Typeset Japanese with lua(la)tex
+%global tl_name luatexja
+%global tl_revision 79037
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	20260517.0
+Release:	%{tl_revision}.1
+Summary:	Typeset Japanese with Lua(La)TeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/luatex/generic/luatexja
-License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexja.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexja.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexja.source.r%{version}.tar.xz
+License:	bsd
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexja.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexja.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexja.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Requires:	texlive(luatexbase)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package offers support for typesetting Japanese documents
-with LuaTeX. Either of the Plain and LaTeX2e formats may be
-used with the package.
+The package offers support for typesetting Japanese documents with
+LuaTeX. Either of the Plain and LaTeX2e formats may be used with the
+package.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/luatex/luatexja
-%doc %{_texmfdistdir}/doc/luatex/luatexja
-#- source
-%doc %{_texmfdistdir}/source/luatex/luatexja
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
